@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Study Consent</title>
+    <style>
+      body { max-width: 600px; margin: 40px auto; font-family: sans-serif; line-height: 1.5; }
+      button { padding: 8px 16px; margin-right: 8px; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <h2>Research Study Consent</h2>
+      <p>This extension records the posts that appear in your Instagram home feed to study what the platform shows to users.</p>
+
+      <h3>What is collected</h3>
+      <ul>
+        <li>Post caption, media type (image, video, carousel, reel), link, and whether it is an ad</li>
+        <li>The order and time in which posts appeared in your feed</li>
+        <li>Post authors, stored only as a pseudonymous code (not the username)</li>
+      </ul>
+
+      <h3>What is NOT collected</h3>
+      <ul>
+        <li>Your name, email, password, direct messages, stories, or other websites</li>
+        <li>Anything outside the Instagram home feed</li>
+      </ul>
+
+      <h3>Your rights</h3>
+      <ul>
+        <li>Pause, export, or delete your data anytime from the extension popup</li>
+        <li>Withdraw from the study at any time</li>
+      </ul>
+
+      <button id="agree">I agree</button>
+      <button id="decline">No thanks</button>
+    </div>
+
+    <div id="thanks" hidden>
+      <h2>Thank you!</h2>
+      <p>You can close this tab. Use the extension icon to pause or delete your data anytime.</p>
+    </div>
+
+    <script type="module" src="./consent.js"></script>
+  </body>
+</html>
